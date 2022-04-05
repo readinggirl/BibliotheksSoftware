@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.icon{
+    height: 100%;
+    width: auto;
+}

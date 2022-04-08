@@ -1,24 +1,44 @@
 ﻿@page
-@model BibliotheksSoftware.Pages.Mediendatenpflege.TiteldatenTabModel
+@model BibliotheksSoftware.Pages.Pages_Mediendatenpflege
 @{
 }
 
 
 <nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#titeldaten" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Titeldaten</button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#verfasser" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Verfasser</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#verlag" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Verlag</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#inhalt" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inhalt</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#weiteres" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">weitere Felder</button>
-  </div>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#titeldaten" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Titeldaten</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#verfasser" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Verfasser</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#verlag" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Verlag</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#inhalt" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inhalt</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#weiteres" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">weitere Felder</button>
+    </div>
 </nav>
 
 <div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="titeldaten" role="tabpanel" aria-labelledby="nav-home-tab">Titeldaten</div>
-  <div class="tab-pane fade" id="verfasser" role="tabpanel" aria-labelledby="nav-profile-tab">Verfasser</div>
-  <div class="tab-pane fade" id="verlag" role="tabpanel" aria-labelledby="nav-contact-tab">Verlag</div>
-  <div class="tab-pane fade" id="inhalt" role="tabpanel" aria-labelledby="nav-contact-tab">Inhalt</div>
-  <div class="tab-pane fade" id="weiteres" role="tabpanel" aria-labelledby="nav-contact-tab">weitere Felder</div>
+    <div class="tab-pane fade show active" id="titeldaten" role="tabpanel" aria-labelledby="nav-home-tab">Titeldaten</div>
+    <div class="tab-pane fade" id="verfasser" role="tabpanel" aria-labelledby="nav-profile-tab">Verfasser</div>
+
+    <!--Verlag-->
+    <div class="tab-pane fade" id="verlag" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text" id="inputVerlag">Verlag</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text" id="inputVerlagssorte">Verlagssorte</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text" id="inputErscheinungsjahr">Erscheinungsjahr</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style="width:300px">
+        </div>
+
+    </div>
+
+    <!--Inhalt-->
+    <div class="tab-pane fade" id="inhalt" role="tabpanel" aria-labelledby="nav-contact-tab">Inhalt</div>
+
+    <div class="tab-pane fade" id="weiteres" role="tabpanel" aria-labelledby="nav-contact-tab">weitere Felder</div>
 </div>
 

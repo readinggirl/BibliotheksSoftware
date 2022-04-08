@@ -1,0 +1,24 @@
+﻿@page
+@model BibliotheksSoftware.Pages.Mediendatenpflege.TiteldatenTabModel
+@{
+}
+
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#titeldaten" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Titeldaten</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#verfasser" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Verfasser</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#verlag" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Verlag</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#inhalt" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inhalt</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#weiteres" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">weitere Felder</button>
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="titeldaten" role="tabpanel" aria-labelledby="nav-home-tab">Titeldaten</div>
+  <div class="tab-pane fade" id="verfasser" role="tabpanel" aria-labelledby="nav-profile-tab">Verfasser</div>
+  <div class="tab-pane fade" id="verlag" role="tabpanel" aria-labelledby="nav-contact-tab">Verlag</div>
+  <div class="tab-pane fade" id="inhalt" role="tabpanel" aria-labelledby="nav-contact-tab">Inhalt</div>
+  <div class="tab-pane fade" id="weiteres" role="tabpanel" aria-labelledby="nav-contact-tab">weitere Felder</div>
+</div>
+

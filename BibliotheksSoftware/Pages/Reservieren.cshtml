@@ -1,0 +1,86 @@
+﻿@page
+@model Pages_Reservieren
+@{
+    ViewData["Title"] = "Reservieren";
+}
+
+<h4>Reservieren</h4>
+
+<div class="grid-container">
+    <div class="row">
+        @*<div class="col-sm">
+            Benutzernummer:
+        </div>
+        <div class="col-sm">
+            <input type="number"/>
+        </div>
+
+        NAME BOX
+        *@
+        <div class="col-sm">
+            <div class="input-group mb-3">
+                 <div class="input-group-prepend">
+                     <span class="input-group-text">Benutzernummer:</span>
+                </div>
+                <input type="number" id="txtBenutzernummer">
+            </div>
+        </div>
+        <div class="col-sm">
+            <a id="lblBenutzer">
+                Hier wird der Benutzer stehen
+            </a>
+        </div>
+
+        <div class="input-group col">
+    <span class="input-group-text">&nbsp; Sortieren nach: </span>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Sachtitel</option>
+        <option value="1">Verfasser_1</option>
+        <option value="2">Systematik</option>
+        <option value="3">Mediennummer</option>
+        <option value="4">Medienart</option>
+        <option value="5">Erscheinungsjahr</option>
+    </select>
+</div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="input-group mb-3">
+                 <div class="input-group-prepend">
+                     <span class="input-group-text">Mediennummer:</span>
+                </div>
+                <input type="number" id="txtMediennummer">
+            </div>
+        </div>
+        <div class="col-sm">
+            <a id="lblMedium">
+                Hier wird das Medium stehen
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <button id="btnShowReservierungen"> Alle Reservierungen anzeigen </button>
+    </div>
+    <div class="row">
+        <a>Reservierte Medien:</a>
+    </div>
+
+</div>
+
+
+
+@* grid:
+
+    <div class="row">
+    <div class="col-sm">
+    One of three columns
+    </div>
+    <div class="col-sm">
+    One of three columns
+    </div>
+    <div class="col-sm">
+    One of three columns
+    </div>
+    </div>
+*@

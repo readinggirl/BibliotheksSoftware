@@ -20,32 +20,131 @@
 <div class="tab-content" id="nav-tabContent">
     <!--Titeldaten-->
     <div class="tab-pane fade show active" id="titeldaten" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="row row-cols-3">
-            <div class="input-group input-group-sm mb-3 fitContent col">
-                <span class="input-group-text" >Mediennummer</span>
+        <div class="row mt-4">
+            <div class="input-group input-group-sm mb-3  col">
+                <span class="input-group-text">Mediennummer</span>
                 <input type="number" class="form-control" id="inputMediennummer" min="1" input>
             </div>
 
-            <div class="input-group input-group-sm mb-3 fitContent col">
-                <span class="input-group-text" >Medienart</span>
+            <div class="input-group input-group-sm mb-3  col">
+                <span class="input-group-text">Medienart</span>
                 <select class="form-select" id="inputMedienart" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected></option>
+                    <option value="1">Buch</option>
+                    <option value="2">CD-Audio</option>
+                    <option value="2">CD-ROM</option>
+                    <option value="3">Dokument</option>
+                    <option value="4">DVD-ROM</option>
+                    <option value="5">MC-Audio</option>
+                    <option value="6">MC-Hoerbuch</option>
+                    <option value="7">Spiel</option>
+                    <option value="8">Video</option>
+                    <option value="9">Zeitschrift</option>
                 </select>
             </div>
 
-            <div class="input-group input-group-sm mb-3 fitContent col">
+            <div class="input-group input-group-sm mb-3  col">
+                <span class="input-group-text">Systematik</span>
+                <input type="text" class="form-control" id="inputSystematik" input>
+            </div>
+
+            <div class="input-group input-group-sm mb-3  col">
                 <span class="input-group-text">ISBN</span>
                 <input type="text" class="form-control" id="inputISBN" input>
             </div>
         </div>
+
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Sachtitel</span>
+            <input type="text" class="form-control" id="inputSachtitel" input>
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Titelzusatz</span>
+            <input type="text" class="form-control" id="inputTitelzusatz" input>
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Nebeneintragung</span>
+            <input type="text" class="form-control" id="inputNebeneintragung" input>
+        </div>
+
+
+        <div class="row">
+            <div class="input-group input-group-sm mb-3  col-xs-8">
+                <span class="input-group-text">Reihentitel</span>
+                <input type="text" class="form-control" id="inputReihentitel" input>
+            </div>
+            <div class="input-group input-group-sm mb-3  col-xs-4">
+                <span class="input-group-text">Bandaufführung</span>
+                <input type="text" class="form-control" id="inputBandaufführung" input>
+            </div>
+        </div>
+
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Fußnote 1</span>
+            <input type="text" class="form-control" id="inputFußnote1" input>
+        </div>
+
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Fußnote 2</span>
+            <input type="text" class="form-control" id="inputFußnote2" input>
+        </div>
+
     </div>
 
     <!--Verfasser-->
-    <div class="tab-pane fade" id="verfasser" role="tabpanel" aria-labelledby="nav-profile-tab">Verfasser</div>
+    <div class="tab-pane fade" id="verfasser" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="input-group input-group-sm mb-3  mt-4">
+            <span class="input-group-text">Verfasser 1</span>
+            <input type="text" class="form-control" id="inputVerfasser1" input>
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Verfasser 2</span>
+            <input type="text" class="form-control" id="inputVerfasser2" input>
+        </div>
+        <div class="input-group input-group-sm mb-3 ">
+            <span class="input-group-text">Verfasser 3</span>
+            <input type="text" class="form-control" id="inputVerfasser3" input>
+        </div>
+
+        <div class="row">
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Beteiligte Person 1</span>
+                <input type="text" class="form-control" id="inputbetPerson1" input>
+            </div>
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Funktion</span>
+                <input type="text" class="form-control" id="inputFunktion1" input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Beteiligte Person 2</span>
+                <input type="text" class="form-control" id="inputbetPerson2" input>
+            </div>
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Funktion</span>
+                <input type="text" class="form-control" id="inputFunktion2" input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Beteiligte Person 3</span>
+                <input type="text" class="form-control" id="inputbetPerson3" input>
+            </div>
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">Funktion</span>
+                <input type="text" class="form-control" id="inputFunktion3" input>
+            </div>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text">Verweis, Pseudonym, ...</span>
+            <input type="text" class="form-control" id="inputVerweis" input>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text">Verfasserangabe</span>
+            <input type="text" class="form-control" id="inputVerfasserAngabe" input>
+        </div>
+    </div>
 
     <!--Verlag-->
     <div class="tab-pane fade" id="verlag" role="tabpanel" aria-labelledby="nav-contact-tab">
@@ -74,3 +173,10 @@
 
 
 <!--"Footer"-->
+<br />
+<button type="button" class="btn btn-new">Neuer Eintrag</button>
+<button type="button" class="btn btn-markulieren">Markulieren</button>
+<button type="button" class="btn btn-loeschen">Löschen</button>
+<button type="button" class="btn btn-abbrechen">Abbrechen</button>
+<button type="button" class="btn btn-speichern">Speichern</button>
+<button type="button" class="btn btn-light">Duplizieren</button>

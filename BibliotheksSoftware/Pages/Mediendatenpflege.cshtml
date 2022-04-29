@@ -17,17 +17,18 @@
     </div>
 </nav>
 
+<br />
 <div class="tab-content" id="nav-tabContent">
     <!--Titeldaten-->
     <div class="tab-pane fade show active" id="titeldaten" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="row row-cols-3">
+        <div class="row ">
             <div class="input-group input-group-sm mb-3 fitContent col">
-                <span class="input-group-text" >Mediennummer</span>
+                <span class="input-group-text">Mediennummer</span>
                 <input type="number" class="form-control" id="inputMediennummer" min="1" input>
             </div>
 
             <div class="input-group input-group-sm mb-3 fitContent col">
-                <span class="input-group-text" >Medienart</span>
+                <span class="input-group-text">Medienart</span>
                 <select class="form-select" id="inputMedienart" aria-label="Default select example">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
@@ -80,12 +81,200 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-3">
+                <div class="input-group input-group-sm mb-3 col">
+                    <span class="input-group-text">Beigaben</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputBeigaben">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm mb-3 col">
+                    <span class="input-group-text">Umfang</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputUmfang">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group input-group-sm mb-3 col">
+                    <span class="input-group-text">Illustrationsvermerk</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputIllustrationsvermerk">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Preis</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputPreis">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">ISBN-10</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputISBN10">
+            </div>
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">ISBN-13</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputISBN13">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">ISMN</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputISMN">
+            </div>
+            <div class="input-group input-group-sm mb-3 col">
+                <span class="input-group-text">ISSN</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputISSN">
+            </div>
+        </div>
     </div>
 
     <!--Inhalt-->
-    <div class="tab-pane fade" id="inhalt" role="tabpanel" aria-labelledby="nav-contact-tab">Inhalt</div>
+    <div class="tab-pane fade" id="inhalt" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="input-group">
+            <span class="input-group-text">Schlagwort</span>
+            <textarea class="form-control" aria-label="With textarea" id="inputSchlagwort"></textarea>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <input class="btn btn-primary" type="button" value="Hinzufügen" id="btnHinzufügen">
+                <input class="btn btn-primary" type="button" value="Register" id="btnHinzufügen">
+            </div>
+
+        </div>
+        <br />
+        <div class="input-group">
+            <span class="input-group-text">Inhaltsangabe</span>
+            <textarea class="form-control" aria-label="With textarea" id="inputInhaltsangabe"></textarea>
+        </div>
+        <br />
+        <div class="input-group input-group-sm ">
+            <span class="input-group-text">Quelle:</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputQuelle">
+        </div>
+        <br />
+        <div class="input-group input-group-sm ">
+            <span class="input-group-text">Hinweis:</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputHinweis">
+        </div>
+
+    </div>
+
+
     <!--Weitere Felder-->
-    <div class="tab-pane fade" id="weiteres" role="tabpanel" aria-labelledby="nav-contact-tab">weitere Felder</div>
+    <div class="tab-pane fade" id="weiteres" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="row">
+            <div class="col-8">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Erwerbsart</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputErwerbsart">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Erwerbsdatum</span>
+                    <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputErwerbsdatum">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="input-group input-group-sm ">
+            <span class="input-group-text">Bezugsquelle</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputBezugsquelle">
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-5">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Rechnungsdaten</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputRechnungsdaten">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm mb-3 fitContent col">
+                    <span class="input-group-text">Status</span>
+                    <select class="form-select" id="inputStatus" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">reserviert</option>
+                        <option value="2">verfügbar</option>
+                        <option value="2">ausgeliehen</option>
+                        <option value="3">makuliert</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Eigentum</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputEigentum">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Nebenstandort</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputNebenstandort">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Reservierung</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputReservierung">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="input-group">
+            <span class="input-group-text">Anmerkungen</span>
+            <textarea class="form-control" aria-label="With textarea" id="inputAnmerkungen"></textarea>
+        </div>
+        <br />
+        <div class="row">
+            <div class="input-group input-group-sm ">
+                <span class="input-group-text">Zusätzliche Infos - Link</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inpuZusatzInfos">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="input-group input-group-sm ">
+                <span class="input-group-text">Eigenes Titelbild - Link</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inpuTitelbild">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-3">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Katalogisierungsdatum</span>
+                    <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputKatDatum">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">VON</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputVon">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">Inventurdatum</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputInventurdatum">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm ">
+                    <span class="input-group-text">letzte Änderung</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="inputletzteAenderung">
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 

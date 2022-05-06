@@ -14,10 +14,25 @@
         <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#berechtigungen" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Berechtigungen, Passwort</button>
     </div>
 </nav>
-
 <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="stammdaten" role="tabpanel" aria-labelledby="nav-home-tab">Stammdaten</div>
-    <div class="tab-pane fade" id="zusaetze" role="tabpanel" aria-labelledby="nav-profile-tab">zusaetze</div>
+
+    
+@*Stammdaten*@
+    <div class="tab-pane fade show active" id="stammdaten" role="tabpanel" aria-labelledby="nav-home-tab">
+        Stammdaten
+        
+    </div>
+
+    
+@*Zusaetze*@
+
+    <div class="tab-pane fade" id="zusaetze" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="form-group">
+        <label for="txbVerhaltenshinweis">Verhaltenshinweis</label>
+        <textarea placeholder="(... wird beim Verleih eingeblendet!)" class="form-control" id="txbVerhaltenshinweis" rows="3"></textarea>
+      </div>
+
+    </div>
 
     <!--berechtigungen-->
     <div class="tab-pane fade" id="berechtigungen" role="tabpanel" aria-labelledby="nav-contact-tab">
@@ -43,10 +58,6 @@
             </div>
         </div>
 
-@* 
-      <li class="form-line" data-type="control_matrix" id="id_31"><label class="form-label form-label-top" id="label_31" for="input_31"> 23. Please rank what you look for in order of importance when selecting products on [Site Name]? </label><div id="cid_31" class="form-input-wide" data-layout="full"><table summary="" aria-labelledby="label_31" cellpadding="4" cellspacing="0" class="form-matrix-table" data-component="matrix"><tbody><tr class="form-matrix-tr form-matrix-header-tr"><th class="form-matrix-th" style="border:none">&nbsp;</th><th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_0"><label id="label_31_col_0"> 1 - Not Important </label></th><th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_1"><label id="label_31_col_1"> 2 </label></th><th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_2"><label id="label_31_col_2"> 3 - Maybe </label></th><th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_3"><label id="label_31_col_3"> 4 </label></th><th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_4"><label id="label_31_col_4"> 5 - Very Important </label></th></tr><tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_31 label_31_row_0"><th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_31_row_0"> Quality </label></th><td class="form-matrix-values"><input type="radio" id="input_31_0_0" class="form-radio" name="q31_23Please[0]" value="1 - Not Important" aria-labelledby="label_31_col_0 label_31_row_0"><label for="input_31_0_0" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_0_1" class="form-radio" name="q31_23Please[0]" value="2" aria-labelledby="label_31_col_1 label_31_row_0"><label for="input_31_0_1" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_0_2" class="form-radio" name="q31_23Please[0]" value="3 - Maybe" aria-labelledby="label_31_col_2 label_31_row_0"><label for="input_31_0_2" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_0_3" class="form-radio" name="q31_23Please[0]" value="4" aria-labelledby="label_31_col_3 label_31_row_0"><label for="input_31_0_3" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_0_4" class="form-radio" name="q31_23Please[0]" value="5 - Very Important" aria-labelledby="label_31_col_4 label_31_row_0"><label for="input_31_0_4" class="matrix-choice-label matrix-radio-label"> </label></td></tr><tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_31 label_31_row_1"><th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_31_row_1"> Cost </label></th><td class="form-matrix-values"><input type="radio" id="input_31_1_0" class="form-radio" name="q31_23Please[1]" value="1 - Not Important" aria-labelledby="label_31_col_0 label_31_row_1"><label for="input_31_1_0" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_1_1" class="form-radio" name="q31_23Please[1]" value="2" aria-labelledby="label_31_col_1 label_31_row_1"><label for="input_31_1_1" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_1_2" class="form-radio" name="q31_23Please[1]" value="3 - Maybe" aria-labelledby="label_31_col_2 label_31_row_1"><label for="input_31_1_2" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_1_3" class="form-radio" name="q31_23Please[1]" value="4" aria-labelledby="label_31_col_3 label_31_row_1"><label for="input_31_1_3" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_1_4" class="form-radio" name="q31_23Please[1]" value="5 - Very Important" aria-labelledby="label_31_col_4 label_31_row_1"><label for="input_31_1_4" class="matrix-choice-label matrix-radio-label"> </label></td></tr><tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_31 label_31_row_2"><th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_31_row_2"> Quantity </label></th><td class="form-matrix-values"><input type="radio" id="input_31_2_0" class="form-radio" name="q31_23Please[2]" value="1 - Not Important" aria-labelledby="label_31_col_0 label_31_row_2"><label for="input_31_2_0" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_2_1" class="form-radio" name="q31_23Please[2]" value="2" aria-labelledby="label_31_col_1 label_31_row_2"><label for="input_31_2_1" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_2_2" class="form-radio" name="q31_23Please[2]" value="3 - Maybe" aria-labelledby="label_31_col_2 label_31_row_2"><label for="input_31_2_2" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_2_3" class="form-radio" name="q31_23Please[2]" value="4" aria-labelledby="label_31_col_3 label_31_row_2"><label for="input_31_2_3" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_2_4" class="form-radio" name="q31_23Please[2]" value="5 - Very Important" aria-labelledby="label_31_col_4 label_31_row_2"><label for="input_31_2_4" class="matrix-choice-label matrix-radio-label"> </label></td></tr><tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_31 label_31_row_3"><th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_31_row_3"> Brand name </label></th><td class="form-matrix-values"><input type="radio" id="input_31_3_0" class="form-radio" name="q31_23Please[3]" value="1 - Not Important" aria-labelledby="label_31_col_0 label_31_row_3"><label for="input_31_3_0" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_3_1" class="form-radio" name="q31_23Please[3]" value="2" aria-labelledby="label_31_col_1 label_31_row_3"><label for="input_31_3_1" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_3_2" class="form-radio" name="q31_23Please[3]" value="3 - Maybe" aria-labelledby="label_31_col_2 label_31_row_3"><label for="input_31_3_2" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_3_3" class="form-radio" name="q31_23Please[3]" value="4" aria-labelledby="label_31_col_3 label_31_row_3"><label for="input_31_3_3" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_3_4" class="form-radio" name="q31_23Please[3]" value="5 - Very Important" aria-labelledby="label_31_col_4 label_31_row_3"><label for="input_31_3_4" class="matrix-choice-label matrix-radio-label"> </label></td></tr><tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_31 label_31_row_4"><th scope="row" class="form-matrix-headers form-matrix-row-headers"><label id="label_31_row_4"> Familiarity </label></th><td class="form-matrix-values"><input type="radio" id="input_31_4_0" class="form-radio" name="q31_23Please[4]" value="1 - Not Important" aria-labelledby="label_31_col_0 label_31_row_4"><label for="input_31_4_0" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_4_1" class="form-radio" name="q31_23Please[4]" value="2" aria-labelledby="label_31_col_1 label_31_row_4"><label for="input_31_4_1" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_4_2" class="form-radio" name="q31_23Please[4]" value="3 - Maybe" aria-labelledby="label_31_col_2 label_31_row_4"><label for="input_31_4_2" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_4_3" class="form-radio" name="q31_23Please[4]" value="4" aria-labelledby="label_31_col_3 label_31_row_4"><label for="input_31_4_3" class="matrix-choice-label matrix-radio-label"> </label></td><td class="form-matrix-values"><input type="radio" id="input_31_4_4" class="form-radio" name="q31_23Please[4]" value="5 - Very Important" aria-labelledby="label_31_col_4 label_31_row_4"><label for="input_31_4_4" class="matrix-choice-label matrix-radio-label"> </label></td></tr></tbody></table></div></li>
- *@
-
          <table class="table table-bordered table-striped">
           <thead>
             <tr>
@@ -69,53 +80,77 @@
           </thead>
           <tbody>
             <tr>
+              <th class="text-nowrap" scope="row">Mediendatenpflege</th>
+              <td><input id="cbMedienZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbMedienNeu" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbMedienAendern" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbMedienLoeschen" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+            </tr>
+            <tr>
               <th class="text-nowrap" scope="row">Benutzerdatenpflege</th>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbBenutzerZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbBenutzerNeu" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbBenutzerAendern" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbBenutzerLoeschen" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
             <tr>
-              <th class="text-nowrap" scope="row">Class prefix</th>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
-              <td><input class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <th class="text-nowrap" scope="row">Gebühreneinstellungen</th>
+              <td><input id="cbGebuehrenEinstellungZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbGebuehrenEinstellungNeu" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbGebuehrenEinstellungAendern" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbGebuehrenEinstellungLoeschen" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
             <tr>
-              <th class="text-nowrap" scope="row"># of columns</th>
-              <td colspan="5">12</td>
+              <th class="text-nowrap" scope="row">Registerpflege</th>
+              <td><input id="cbRegisterZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbRegisterNeu" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbRegisterAendern" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+              <td><input id="cbRegisterLoeschen" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
             <tr>
-              <th class="text-nowrap" scope="row">Gutter width</th>
-              <td colspan="5">30px (15px on each side of a column)</td>
+              <th class="text-nowrap" scope="row">Verleihmodul selber bedienen</th>
+              <td><input id="cbVerleihmodulZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
             <tr>
-              <th class="text-nowrap" scope="row">Nestable</th>
-              <td colspan="5">Yes</td>
+              <th class="text-nowrap" scope="row">Einnahmen / Kassabuch</th>
+              <td><input id="cbKassabuchZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
             <tr>
-              <th class="text-nowrap" scope="row">Column ordering</th>
-              <td colspan="5">Yes</td>
+              <th class="text-nowrap" scope="row">Gebühren: Restschuld erlassen</th>
+              <td><input id="cbGebuehrenSchuldZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
             </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Statistik / Login-Report</th>
+              <td><input id="cbStatistikZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Etikettendruck</th>
+              <td><input id="cbEtikettenZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Ausweisdruck</th>
+              <td><input id="cbAusweisZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+            </tr>
+            <tr>
+              <th class="text-nowrap" scope="row">Mahnwesen / Mitteilungen an Benutzer</th>
+              <td><input id="cbMitteilungenZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+            </tr>
+            <tr class="bg-danger text-light">
+                  <th class="text-nowrap" scope="row">ADMINISTRATORRECHTE</th>
+                  <td><input id="cbKassabuchZugriff" class="form-check-input" type="checkbox" class="checkbox-big"/></td>
+                  <td colspan=3><label>
+                      ACHTUNG! Nur für Bibliotheksadministrator aktivieren!
+                  </label></td>
+           </tr>
           </tbody>
         </table>
 
-        
-        @*<div id="BerechtigungenGrid">
-            <div class="row">
-            <div class="col-sm">
-            One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-            </div>
-        </div>*@
-
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="cbDatenEinwilligung">
+          <label class="form-check-label" for="cbDatenEinwilligung">
+            Der Benutzer ermächtigt das Bibliothekspersonal, seine historischen Entlehndaten abfragen zu dürfen.
+          </label>
+        </div>
     </div>
 
     <!--Inhalt-->

@@ -1,3 +1,28 @@
 ﻿body {
 }
 
+.btn-new {
+    @extend .btn-primary;
+    background-color: #2484FF;
+}
+
+.btn-markulieren {
+    @extend .btn-success;
+    background-color: #19de19;
+    color: black;
+}
+
+.btn-loeschen {
+    @extend .btn-danger;
+    background-color: #ff0000;
+}
+
+.btn-abbrechen {
+    @extend .btn-primary;
+    background-color: #ffff52;
+}
+
+.btn-speichern {
+    @extend .btn-primary;
+    background-color: #00ffff;
+}

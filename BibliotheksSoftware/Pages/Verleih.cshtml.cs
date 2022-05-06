@@ -1,15 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-
-namespace BibliotheksSoftware.Pages.Mediendatenpflege
+namespace BibliotheksSoftware.Pages
 {
-    public class TiteldatenTabModel : PageModel
+    public class VerleihModel : PageModel
     {
-        
         public void OnGet()
         {
-            
         }
     }
 }

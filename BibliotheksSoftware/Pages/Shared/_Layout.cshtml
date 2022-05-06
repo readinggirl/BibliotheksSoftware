@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/BibliotheksSoftware.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    @*<header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">BibliotheksSoftware</a>
@@ -51,8 +51,11 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
+    </header>*@
+    <div class="container mt-4">
+       <div class="align-content-end">
+           <a asp-page="/MitarbeiterStartseite">Home</a>
+       </div> 
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -60,7 +63,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - BibliotheksSoftware - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - BibliotheksSoftware
         </div>
     </footer>
 

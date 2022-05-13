@@ -7,6 +7,7 @@ namespace BibliotheksSoftware.Pages.Benutzerdatenpflege
     {
         public void OnGet()
         {
+
         }
     }
 }

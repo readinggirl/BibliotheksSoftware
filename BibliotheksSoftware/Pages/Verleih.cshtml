@@ -3,3 +3,146 @@
 @{
 }
 
+<h4>Verleih und Rückgabe</h4>
+
+<div class="container mt-3 px-0">
+    <div class="row">
+        <div class="col-2">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">Benutzernummer</span>
+                <input type="number" class="form-control" id="benutzerNummer" input>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control" id="benutzerName" input>
+                <button type="button" class="btn btn-light">?</button>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">BGR</span>
+                <input type="text" maxlength=2 class="form-control" id="benutzerGr" input>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">GEBGR</span>
+                <input type="number" maxlength=1 class="form-control" id="gebuehrenGr" input>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">Konto</span>
+                <input type="number" class="form-control" id="kontoNr" input>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Kassa</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text">Mediennummer</span>
+                <input type="number" class="form-control" id="medienNummer" input>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control" id="medienName" input>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Recherche</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Reservieren</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Alle Medien verlängern</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Gebührengruppen</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light">Druckvorschau</button>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-4">
+            <label>Aktuelle Entlehnungen des Benutzers: <span id="entlehnungen">0</span></label>
+        </div>
+        <div class="col"></div>
+        <div class="col-2">
+            <label>Abo gültig bis 31.12.<span>2022</span></label>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">D</th>
+                <th scope="col">M</th>
+                <th scope="col">MNR</th>
+                <th scope="col">Sachtitel</th>
+                <th scope="col">Verfasser</th>
+                <th scope="col">Entlehntag</th>
+                <th scope="col">Rückgabefrist</th>
+                <th scope="col">Verlängern</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>D</td>
+                <td>M</td>
+                <td>12356</td>
+                <td>a sau geila titel</td>
+                <td>Verfasser</td>
+                <td>100</td>
+                <td>21.05.2022</td>
+                <td>Verlängern</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>M</td>
+                <td>12356</td>
+                <td>a sau geila titel</td>
+                <td>Verfasser</td>
+                <td>100</td>
+                <td>21.05.2022</td>
+                <td>Verlängern</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>M</td>
+                <td>12356</td>
+                <td>a sau geila titel</td>
+                <td>Verfasser</td>
+                <td>100</td>
+                <td>21.05.2022</td>
+                <td>Verlängern</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

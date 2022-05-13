@@ -1,10 +1,35 @@
 ﻿@page
-@model IndexModel
+@model Pages_Medienrecherche
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Mitarbeiter Startseite";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <div>
+        <a href="/Verleih">
+            <img class="" width="75px" height="75px" src="../images/Verleih.png" />
+            Medienverleih und Rückgabe
+        </a>
+    </div>
+    <div>
+        <a href="/Medienrecherche">
+        <img class="" width="75px" height="75px" src="../images/Medienrecherche.png"/>
+        Medienrecherche</a>
+    </div>
+    <div>
+        <a href="/Reservieren">
+        <img class="" width="75px" height="75px" src="../images/Reservieren.png"/>
+        Reservieren</a>
+    </div>
+    <div class="">
+        <a href="/Mediendatenpflege">
+        <img class="" width="75px" height="75px" src="../images/Mediendatenpflege.png"/>
+        Mediendatenpflege </a>
+    </div>
+    <div class="">
+        <a href="/Benutzerdatenpflege">
+            <img class="" width="75px" height="75px" src="../images/Benutzerdatenpflege.png"/>
+            Benutzerdatenpflege
+        </a>
+    </div>
 </div>

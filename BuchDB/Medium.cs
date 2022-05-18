@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BuchDB
 {
-    internal class Medium
+    public class Medium
     {
         public int Id { get; set; }
         public Medienart Medienart { get; set; }

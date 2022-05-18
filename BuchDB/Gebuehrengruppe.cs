@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BuchDB;
-public enum EBenutzergruppe {
-    W, M, JM, JW, KM, KW, I
+public class Gebuehrengruppe
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
 }

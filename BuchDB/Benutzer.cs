@@ -4,8 +4,8 @@ public class Benutzer {
     public string? Titel { get; set; }
     public string Familienname { get; set; }
     public string Vorname { get; set; }
-    public EBenutzergruppe Benutzergruppe { get; set; }
-    public EGebuehrengruppe Gebuehrengruppe { get; set; }
+    public Benutzergruppe Benutzergruppe { get; set; }
+    public Gebuehrengruppe Gebuehrengruppe { get; set; }
     public string? Telefon { get; set; }
     public string? Mobiltelefon { get; set; }
     public DateOnly GebDatum{ get; set; }
@@ -14,8 +14,8 @@ public class Benutzer {
     public int? HausNr { get; set; }
     public int? OrtId { get; set; }
     public double? AktuellerKontostand { get; set; }
-    public List<ERecht> WebsiteRechte { get; set; }
-    public List<Medium> Medien { get; set; }
+    public List<Recht> WebsiteRechte { get; set; }
+    public List<Medium>? Medien { get; set; }
     public string? LoginUser { get; set; }
     public string? LoginPassword { get; set; }
 

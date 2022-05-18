@@ -9,7 +9,7 @@ namespace BuchDB
     internal class Medium
     {
         public int Id { get; set; }
-        public EMedienart Medienart { get; set; }
+        public Medienart Medienart { get; set; }
         public long ISBN { get; set; }
         public string Systematik { get; set; }
         public string Sachtitel { get; set; }
@@ -29,7 +29,7 @@ namespace BuchDB
         public long? ISBN10 { get; set; }
         public long? ISBN13 { get; set; }
         public string ArtDerBindung { get; set; }
-        public EAusleihstatus eAusleihstatus { get; set; }
+        public Ausleihstatus eAusleihstatus { get; set; }
         public string? Anmerkungen { get; set; }
         public string? ZusaetzlicheInfos { get; set; }
         public string Titelbild { get; set; }

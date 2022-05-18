@@ -8,7 +8,7 @@ public class Benutzer {
     public Gebuehrengruppe Gebuehrengruppe { get; set; }
     public string? Telefon { get; set; }
     public string? Mobiltelefon { get; set; }
-    public DateOnly GebDatum{ get; set; }
+    public DateOnly GebDatum { get; set; }
     public string? MailAdresse { get; set; }
     public string? Strasse { get; set; }
     public int? HausNr { get; set; }

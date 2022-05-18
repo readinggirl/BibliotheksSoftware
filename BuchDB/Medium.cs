@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuchDB
-{
-    public class Medium
-    {
+namespace BuchDB {
+    public class Medium {
         public int Id { get; set; }
         public Medienart Medienart { get; set; }
         public long ISBN { get; set; }

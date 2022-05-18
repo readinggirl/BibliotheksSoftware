@@ -1,11 +1,22 @@
 ﻿$(_ => {
     console.log('JQuery ready');
 
-    const baseUrl="https://localhost:5000";
-    const url=`${baseUrl}/benutzer/id`;
+    const baseUrl = "https://localhost:5000";
 
-    $.post(url)
-     
+    $('.btn btn-new').on('click', _ => {
+
+        
+        $.ajax({
+            url: `${baseUrl}/benutzer/id`,
+            method: 'POST',
+            contentType: 'application/json',
+            data://zsmfügen
+        })
+        //.then(x=>)
+        //.fail()
+    });
+
+
 });
 
 

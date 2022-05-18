@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuchDB;
+public class Recht
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+}
+
+//    MEDIENDATENPFLEGE_Z,
+//    MEDIENDATENPFLEGE_N,
+//    MEDIENDATENPFLEGE_AE,
+//    MEDIENDATENPFLEGE_L,
+
+//    BENUTZERDATENPFLEGE_Z,
+//    BENUTZERDATENPFLEGE_N,
+//    BENUTZERDATENPFLEGE_AE,
+//    BENUTZERDATENPFLEGE_L,
+
+//    GEBUEHRENEINSTELLUNGEN_Z,
+//    GEBUEHRENEINSTELLUNGEN_N,
+//    GEBUEHRENEINSTELLUNGEN_AE,
+//    GEBUEHRENEINSTELLUNGEN_L,
+
+//    REGISTERPFLEGE_Z,
+//    REGISTERPFLEGE_N,
+//    REGISTERPFLEGE_AE,
+//    REGISTERPFLEGE_L,
+
+//    VERLEIH_BEDIENEN,
+//    KASSABUCH_ANSEHEN,
+//    STATISTIK_ANSEHEN,
+//    ETIKETTENDRUCK_DURCHFUEHREN,
+//    AUSWEISDRUCK,
+//    MAHNWESEN,
+
+//    ADMINISTRATORRECHTE
+//}

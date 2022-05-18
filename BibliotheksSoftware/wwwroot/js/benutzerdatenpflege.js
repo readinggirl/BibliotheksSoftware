@@ -1,4 +1,5 @@
-﻿$(_ => {
+﻿const bootstrap = require('bootstrap');
+$(_ => {
     console.log('JQuery ready');
 
     const baseUrl = "https://localhost:5000";

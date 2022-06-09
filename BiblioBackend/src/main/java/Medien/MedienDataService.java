@@ -38,4 +38,8 @@ public class MedienDataService {
     public List<MediumDto> getMedien(){
         return medien.values().stream().toList();
     }
+
+    public void addMedium(MediumDto medium){
+        this.medien.put(medium.getMedienNummer(), medium);
+    }
 }

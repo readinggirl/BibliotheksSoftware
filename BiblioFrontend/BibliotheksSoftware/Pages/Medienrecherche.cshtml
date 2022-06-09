@@ -4,52 +4,57 @@
     ViewData["Title"] = "Medienrecherche";
 }
 
+
+<head>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/medienrecherche.js"></script>
+</head>
+
 <h4>Medienrecherche</h4>
 
 <div class="row">
     <div class="input-group col">
-        <input type="text" class="form-control" placeholder="Suchbegriff eingeben..." aria-label="Suchbegriff">
-        <button type="button" class="btn btn-outline-dark">Suchen</button>
+        <input type="text" id="txtFilter" class="form-control" placeholder="Suchbegriff eingeben..." aria-label="Suchbegriff">
+        <button type="button" class="btn btn-outline-dark" id="btnSearch">Suchen</button>
     </div>
 
     <div class="input-group col">
         <span class="input-group-text">&nbsp; Sortieren nach: </span>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" id="selectType" aria-label="Default select example">
             <option selected>Sachtitel</option>
             <option value="1">Verfasser_1</option>
             <option value="2">Systematik</option>
             <option value="3">Mediennummer</option>
-            <option value="4">Medienart</option>
-            <option value="5">Erscheinungsjahr</option>
+
+            <option value="4">Erscheinungsjahr</option>
         </select>
     </div>
+</div>
 
-    <div class="mt-4">
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th class="text-center">
-                        S
-                    </th>
-                    <th class="text-center">
-                        Sachtitel
-                    </th>
-                    <th class="text-center">
-                        Verfasser
-                    </th>
-                    <th class="text-center">
-                        Syst.
-                    </th>
-                    <th class="text-center">
-                        MNr.
-                    </th>
-                    <th class="text-center">
-                        Jahr
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+<div class="mt-4">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">
+                    Sachtitel
+                </th>
+                <th class="text-center">
+                    Verfasser
+                </th>
+                <th class="text-center">
+                    Syst.
+                </th>
+                <th class="text-center">
+                    MNr.
+                </th>
+                <th class="text-center">
+                    Jahr
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <ul id="lstMedien"></ul>
+</div>
 </div>

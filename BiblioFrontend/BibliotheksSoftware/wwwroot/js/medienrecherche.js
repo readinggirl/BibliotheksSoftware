@@ -4,15 +4,25 @@ $(_ => {
     $('#txtFilter').on('keypress', _ => {
         if (_.which == 13) {
             console.log('loading books..');
+            $('tbody').empty();
             const bookname = $('#txtFilter').val();
             console.log(`name= ${bookname}`);
             const baseUrl = 'http://localhost:8080/medien';
             $.getJSON(baseUrl)
                 .then(data => {
-                    const ul = $('#lstMedien');
+                    console.table(data);
+
                     for (const item of data) {
                         //$('<li>').html(item.body).appendTo($('#lstComments'));
-                        $('#lstMedien').append($('<li>').html(item.body));
+                        if (item.sachtitel.includes($('#txtFilter').val())) {
+                            $(`<tr id=${item.medienNummer}>`).appendTo('tbody');
+                            $('<td>').html(item.sachtitel).appendTo(`#${item.medienNummer}`);
+                            $('<td>').html(item.verfasser).appendTo(`#${item.medienNummer}`);
+                            $('<td>').html(item.systematik).appendTo(`#${item.medienNummer}`);
+                            $('<td>').html(item.medienNummer).appendTo(`#${item.medienNummer}`);
+                            $('<td>').html(item.jahr).appendTo(`#${item.medienNummer}`);
+                        }
+
                     }
                 });
             console.log('request sent');
@@ -21,6 +31,7 @@ $(_ => {
 
     $('#btnSearch').on('click', _ => {
         console.log('loading books..');
+        $('tbody').empty();
         const bookname = $('#txtFilter').val();
         console.log(`name= ${bookname}`);
         const baseUrl = 'http://localhost:8080/medien';
@@ -30,16 +41,25 @@ $(_ => {
                 const ul = $('#lstMedien');
                 for (const item of data) {
                     //$('<li>').html(item.body).appendTo($('#lstComments'));
-                    $('#lstMedien').append($('<li>').html(item.medienNummer));
+                    if (item.sachtitel.includes($('#txtFilter').val())) {
+                        $(`<tr id=${item.medienNummer}>`).appendTo('tbody');
+                        $('<td>').html(item.sachtitel).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.verfasser).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.systematik).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.medienNummer).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.jahr).appendTo(`#${item.medienNummer}`);
+                    }
+
                 }
             });
         console.log('request sent');
     });
 
     $('#selectType').on('change', _ => {
-        const selected = $('#selectType option:selected').val();
+        const selType = $('#selectType option :selected').val();
+        $('tbody').empty();
 
-        const baseUrl = 'http://localhost:8080/Medien';
+        const baseUrl = 'http://localhost:8080/medien';
         $.getJSON(baseUrl)
             .then(data => {
                 console.log('HALO');
@@ -52,28 +72,38 @@ $(_ => {
                 //console.log(list);
 
                 //list = list.sort((a, b) => a.selected > b.selected ? 1 : -1);
-                data.sort((a, b) => a.selected > b.selected ? 1 : -1);
+                switch (selType) {
+                    case 0: //sachtitel
+                        data.sort((a, b) => a.sachtitel > b.sachtitel ? 1 : -1);
+                        break;
+                    case 1: //Verfasser
+                        data.sort((a, b) => a.verfasser > b.verfasser ? 1 : -1);
+                        break;
+                    case 2: //system
+                        data.sort((a, b) => a.systematik > b.systematik ? 1 : -1);
+                        break;
+                    case 3: //medNR
+                        data.sort((a, b) => a.medienNummer > b.medienNummer ? 1 : -1);
+                        break;
+                    case 4: //jahr
+                        data.sort((a, b) => a.jahr > b.jahr ? 1 : -1);
+                        break;
+                }
+                //data.sort((a, b) => a.medienNummer > b.medienNummer ? 1 : -1);
 
                 for (const item of data) {
                     //$('<li>').html(item.body).appendTo($('#lstComments'));
-                    $('#lstMedien').append($('<li>').html(item.body));
+                    if (item.sachtitel.includes($('#txtFilter').val())) {
+                        $(`<tr id=${item.medienNummer}>`).appendTo('tbody');
+                        $('<td>').html(item.sachtitel).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.verfasser).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.systematik).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.medienNummer).appendTo(`#${item.medienNummer}`);
+                        $('<td>').html(item.jahr).appendTo(`#${item.medienNummer}`);
+                    }
+
                 }
             });
     });
-
-    //$('#selectType').on('click', _ => {
-    //    const list = [
-    //        { Mediennummer: 2, Sachtitel: 'Zello' },
-    //        { Mediennummer: 5, Sachtitel: 'Hebra' }
-    //    ]
-    //    console.log(list);
-
-    //    list = list.sort((a, b) => a.Mediennummer > b.Mediennummer ? 1 : -1);
-
-    //    console.log(list);
-    //});
-
-
-
 
 });

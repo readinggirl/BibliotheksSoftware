@@ -1,7 +1,7 @@
 $(_ => {
     console.log('JQuery ready');
 
-    const baseUrl = "https://localhost:8080/medien";
+    const baseUrl = "http://localhost:8080/medien";
 
     $('.btn-new').on('click', _ => {
         console.log('click button new')
@@ -9,12 +9,13 @@ $(_ => {
         $.getJSON(baseUrl)
             .then(data => {
                 for (const item of data) {
-                    if (item.medienNummer > max) max = item.medienNummer;
+                    if (item.medienNummer > max) {
+                        max = item.medienNummer;
+                    }
                 }
+                console.log(max);
+                $('#inputMediennummer').val(max + 1);
             });
-
-        $('#inputMediennummer').val(max + 1);
-
         console.log('medien NR set')
     });
 

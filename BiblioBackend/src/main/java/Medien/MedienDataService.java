@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class MedienDataService {
-    private HashMap<Integer, MediumDto> medien = new HashMap<>();
+    private HashMap<Integer, Medium> medien = new HashMap<>();
 
 
     /*
@@ -17,7 +17,7 @@ public class MedienDataService {
     private String isbn;
     * */
     public void createInitialMedien(){
-        MediumDto m1 = new MediumDto();
+        Medium m1 = new Medium();
         m1.setMedienNummer(123);
         m1.setJahr(2000);
         m1.setVerfasser("Ich, Du, Er, Sie, Es");
@@ -29,7 +29,7 @@ public class MedienDataService {
 
         this.medien.put(m1.getMedienNummer(), m1);
 
-        MediumDto m2 = new MediumDto();
+        Medium m2 = new Medium();
         m2.setMedienNummer(420);
         m2.setJahr(2003);
         m2.setVerfasser("Coole Verfasser");
@@ -41,7 +41,7 @@ public class MedienDataService {
 
         this.medien.put(m2.getMedienNummer(), m2);
 
-        MediumDto m3 = new MediumDto();
+        Medium m3 = new Medium();
         m3.setMedienNummer(69);
         m3.setJahr(1997);
         m3.setVerfasser("fade Verfasser");
@@ -54,11 +54,27 @@ public class MedienDataService {
         this.medien.put(m3.getMedienNummer(), m3);
     }
 
-    public List<MediumDto> getMedien(){
+    public List<Medium> getMedien(){
         return medien.values().stream().toList();
     }
 
-    public void addMedium(MediumDto medium){
-        this.medien.put(medium.getMedienNummer(), medium);
+    public void addMedium(MediumDto dto){
+        Medium newMedium = convertDtoToMedium(dto);
+        this.medien.put(newMedium.getMedienNummer(), newMedium);
+    }
+
+    private Medium convertDtoToMedium(MediumDto dto){
+        Medium m = new Medium();
+
+        m.setIsbn(dto.getIsbn());
+        m.setMedienArt(dto.getMedienArt());
+        m.setMedienNummer(Integer.parseInt(dto.getMedienNummer()));
+        m.setJahr(Integer.parseInt(dto.getJahr()));
+        m.setSachtitel(dto.getSachtitel());
+        m.setSystematik(dto.getSystematik());
+        m.setVerfasser(dto.getVerfasser());
+
+
+        return m;
     }
 }

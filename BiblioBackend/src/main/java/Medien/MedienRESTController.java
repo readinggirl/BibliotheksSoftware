@@ -13,8 +13,8 @@ public class MedienRESTController {
     private MedienDataService dataService;
 
     @RequestMapping(value ="/medien", method = RequestMethod.GET)
-    public HttpEntity<List<MediumDto>> getMedien() {
-        List<MediumDto> medien = dataService.getMedien();
+    public HttpEntity<List<Medium>> getMedien() {
+        List<Medium> medien = dataService.getMedien();
         return new HttpEntity<>(medien);
     }
 
